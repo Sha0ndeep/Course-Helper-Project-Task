@@ -1,4 +1,5 @@
 // script.js
+const previewButton = document.getElementById('preview-button');
 
 // Function to calculate and update the countdown timer
 function updateCountdown() {
@@ -24,7 +25,15 @@ function updateCountdown() {
         document.getElementById('timer').innerHTML = '<h3>Happy New Year 2025! 🎉</h3>';
     }
 }
+previewButton.addEventListener('click', () => {
+  gsap.fromTo(
+      timerElement,
+      { scale: 1, color: '#fff' },
+      { scale: 1.5, color: '#FFD700', duration: 0.5, yoyo: true, repeat: 1 }
+  );
 
+  alert('Happy New Year 2025!');
+});
 // Run the countdown update every second
 const countdownInterval = setInterval(updateCountdown, 1000);
 

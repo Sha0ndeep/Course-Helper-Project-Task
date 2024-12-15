@@ -2,8 +2,11 @@
 body {
     font-family: Montserrat, sans-serif;
     color: white;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     box-sizing: border-box;
     background-color: #1a1a1a;
      background: hsla(0, 0%, 0%, 1);
